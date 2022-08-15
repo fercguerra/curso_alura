@@ -12,23 +12,64 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Row(
+      home: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        //eixo principal
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            color: Colors.red,
-            height: 100,
-            width: 100,
+          Stack(
+            alignment: AlignmentDirectional.center,
+            children: [
+              Container(
+                color: Colors.red,
+                height: 100,
+                width: 100,
+              ),
+              Container(
+                color: Colors.blue,
+                height: 50,
+                width: 50,
+              ),
+            ],
           ),
-          Container(
-            color: Colors.blue,
-            height: 50,
-            width: 50,
+          Stack(
+            alignment: AlignmentDirectional.center,
+            children: [
+              Container(
+                color: Colors.blue,
+                height: 100,
+                width: 100,
+              ),
+              Container(
+                color: Colors.red,
+                height: 50,
+                width: 50,
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                color: Colors.cyan,
+                height: 50,
+                width: 50,
+              ),
+              Container(
+                color: Colors.pinkAccent,
+                height: 50,
+                width: 50,
+              ),
+              Container(
+                color: Colors.purple,
+                height: 50,
+                width: 50,
+              ),
+            ],
           ),
         ],
       ),
