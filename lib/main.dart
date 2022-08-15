@@ -18,14 +18,25 @@ class MyApp extends StatelessWidget {
       home: Stack(
         alignment: AlignmentDirectional.center,
         children: [
-          Container(color: Colors.red,
-          width: 100,
-          height: 100,
+          Container(
+            color: Colors.black,
+            width: 300,
+            height: 300,
+          ),
+          Container(
+            color: Colors.red,
+            height: 150,
+            width: 150,
           ),
           Container(
             color: Colors.blue,
-            width: 50,
-            height: 50,
+            height: 75,
+            width: 75,
+          ),
+          Container(
+            color: Colors.yellow,
+            height: 37,
+            width: 37,
           ),
         ],
       ),
